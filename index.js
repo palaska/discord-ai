@@ -22,7 +22,7 @@ client.on("messageCreate", async function (message) {
   
   try {
     const response = await openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4",
         messages: [
             {role: "system", content: "You are a helpful assistant who responds succinctly"},
             {role: "user", content: message.content}
