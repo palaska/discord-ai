@@ -50,9 +50,7 @@ client.on("messageCreate", async function (message) {
     return message.reply(content);
 
   } catch (err) {
-    return message.reply(`As an AI robot, I errored out.
-    error: ${err}`
-    );
+    return message.reply(`As an AI robot, I errored out.\n${err}`);
   }
 });
 
